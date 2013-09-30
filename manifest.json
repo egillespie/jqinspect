@@ -1,0 +1,17 @@
+{
+	"name": "jqInspect",
+	"description": "Adds a right-click 'Inspect with jQuery' menu item",
+	"version": "1.0.0",
+	
+	"permissions": [
+		"contextMenus"
+	],
+	
+	"background": {
+		"scripts": [
+			"jqinspect.js"
+		]
+	},
+
+	"manifest_version": 2
+}
