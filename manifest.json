@@ -1,26 +1,32 @@
 {
-	"name": "jqInspect",
-	"description": "Adds a right-click 'Inspect with jQuery' menu item",
-	"version": "1.0.0",
-	
-	"permissions": [
-		"contextMenus"
-	],
-	
-	"background": {
-		"scripts": [
-			"background.js"
-		]
-	},
-	
-	"content_scripts": [
-		{
-			"matches" : [ "*://*/*" ],
-			"js": [
-				"inspectWith.js"
-			]
-		}
-	],
+    "name": "jqInspect",
+    "description": "Adds a right-click 'Inspect with jQuery' menu item",
+    "version": "1.0.0",
 
-	"manifest_version": 2
+    "permissions": [
+        "contextMenus",
+        "tabs"
+    ],
+
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+
+    "content_scripts": [
+        {
+            "matches" : [ "*://*/*" ],
+            "run_at": "document_end",
+            "js": [
+                "inspectWith.js"
+            ]
+        }
+    ],
+
+    "web_accessible_resources": [
+        "captureClick.js"
+    ],
+
+    "manifest_version": 2
 }

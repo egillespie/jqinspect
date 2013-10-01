@@ -5,7 +5,7 @@ function inspectWith(info, tab) {
 }
 
 chrome.contextMenus.create({
-	"title": "Inspect Element with jQuery",
-	"contexts": ["all"],
-	"onclick": inspectWith
+    "title": "Inspect Element with jQuery",
+    "contexts": ["all"],
+    "onclick": inspectWith
 });
