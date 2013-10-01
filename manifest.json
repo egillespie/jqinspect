@@ -9,9 +9,18 @@
 	
 	"background": {
 		"scripts": [
-			"jqinspect.js"
+			"background.js"
 		]
 	},
+	
+	"content_scripts": [
+		{
+			"matches" : [ "*://*/*" ],
+			"js": [
+				"inspectWith.js"
+			]
+		}
+	],
 
 	"manifest_version": 2
 }
