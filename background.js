@@ -14,3 +14,4 @@ chrome.contextMenus.create({
 	"contexts": ["all"],
 	"onclick": jqInspect
 });
+
