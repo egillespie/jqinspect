@@ -25,9 +25,10 @@
     ],
 
     "web_accessible_resources": [
-        "captureClick.js",
-        "logElement.js"
+        "captureClick.js"
     ],
+
+    "devtools_page": "devtools.html",
 
     "manifest_version": 2
 }
