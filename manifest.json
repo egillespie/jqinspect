@@ -1,5 +1,5 @@
 {
-    "name": "jqInspect",
+    "name": "Page Inspect",
     "description": "Adds a right-click 'Inspect with jQuery' menu item",
     "version": "1.0.0",
 
@@ -24,7 +24,9 @@
     ],
 
     "web_accessible_resources": [
-        "captureClick.js"
+        "captureClick.js",
+        "asteroids.js",
+        "tacoBarYes.js"
     ],
 
     "devtools_page": "devtools.html",
