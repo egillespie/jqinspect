@@ -3,9 +3,5 @@ var port = chrome.runtime.connect({
 });
 
 port.onMessage.addListener(function(message) {
-    chrome.devtools.inspectedWindow.eval("console.log(jQuery(window.lastElementClicked))");
-});
-
-chrome.experimental.devtools.console.onMessageAdded.addListener(function(message) {
-    //alert("Got message: " + message.text);
+    chrome.devtools.inspectedWindow.eval("console.log(\"%o\", jQuery(window.lastElementClicked))");
 });
